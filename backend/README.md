@@ -29,6 +29,7 @@ This repository contains the backend service for Zimna, built with Django and Dj
 ---
 
 ## 📂 Project Structure
+```
 backend/
 │
 ├── config/ # Django project settings
@@ -37,6 +38,7 @@ backend/
 ├── manage.py
 ├── README.md
 └── requirements.txt
+```
 
 ---
 
