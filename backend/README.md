@@ -32,12 +32,12 @@ This repository contains the backend service for Zimna, built with Django and Dj
 ```
 backend/
 │
-├── config/ # Django project settings
-├── goals/ # Goals application
-├── venv/ # Virtual environment (ignored in Git)
-├── manage.py
-├── README.md
-└── requirements.txt
+├── config/           # Main Django project folder
+├── goals/            # Core app for managing user goals
+├── venv/             # Python virtual environment (ignored in Git)
+├── manage.py         # Django command-line utility
+├── README.md         # Backend documentation and setup guide
+└── requirements.txt  # List of Python dependencies
 ```
 
 ---
