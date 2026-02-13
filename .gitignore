@@ -2,13 +2,36 @@
 venv/
 __pycache__/
 *.pyc
-.env
-.env.local
 
 # Node / Next.js
 node_modules/
 .next/
+out/
 
-# Optional: OS / logs
+# Typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Testing / Coverage
+/coverage
+
+# Production build
+/build
+
+# Environment files 
+.env*
+.env.local
+
+# Misc OS / Logs
 .DS_Store
 *.log
+*.pem
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Vercel
+.vercel
