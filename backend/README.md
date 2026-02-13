@@ -1,123 +1,104 @@
-# Zimna Backend
+🧊 Zimna Backend
+Zimna is an AI-powered life planning and goal management platform designed to help users transform long-term ambitions into clear, actionable steps.
 
-Zimna is an AI-powered life planning and goal management platform designed to help users turn long-term goals into clear, actionable steps.
+This repository houses the backend service, built with Django and Django REST Framework, providing the engine for authentication, goal management, and AI-driven task orchestration.
 
-This repository contains the backend service for Zimna, built with Django and Django REST Framework. It provides REST APIs for authentication, goal management, task planning, scheduling, and AI-powered features.
+🚀 Features
+Secure Auth: User authentication and authorization.
 
----
+Goal Engine: Comprehensive goal creation and management.
 
-## 🚀 Features
+Task Intelligence: Automated task generation and tracking.
 
-- User authentication and authorization
-- Goal creation and management
-- Task generation and tracking
-- Smart planning and scheduling
-- AI-powered goal breakdown
-- Progress tracking and analytics (planned)
+Smart Scheduling: Logic-based planning and scheduling.
 
----
+AI Integration: Goal breakdown powered by LLMs.
 
-## 🛠 Tech Stack
+Analytics: Progress tracking and productivity insights (Planned).
 
-- Python
-- Django
-- Django REST Framework
-- JWT Authentication (planned)
-- PostgreSQL (planned)
-- OpenAI / LLM Integration (planned)
+🛠 Tech Stack
+Language: Python
 
----
+Framework: Django & Django REST Framework
 
-## 📂 Project Structure
+Database: PostgreSQL (Planned)
+
+Auth: JWT Authentication (Planned)
+
+AI: OpenAI / LLM Integration (Planned)
+
+📂 Project Structure
+Plaintext
+
 backend/
-│
-├── config/ # Django project settings
-├── goals/ # Goals application
-├── venv/ # Virtual environment (ignored in Git)
-├── manage.py
-├── README.md
-└── requirements.txt
+├── config/             # Django project settings
+├── goals/              # Core goals & task application
+├── venv/               # Virtual environment (Git ignored)
+├── manage.py           # Django CLI
+├── README.md           # Documentation
+└── requirements.txt    # Project dependencies
+⚙️ Local Development Setup (Windows)
+Follow these steps to get your local environment up and running.
 
----
+1. Navigate to the Directory
+Bash
 
-## ⚙️ Local Development Setup (Windows)
-
-Follow the steps below to set up the backend locally.
-
----
-
-#### 1. Navigate to Backend Directory
-```bash
 cd backend
+2. Environment Setup
+Create and activate your virtual environment:
 
-#### 2. Create Virtual Environment (Windows Powershell)
+PowerShell
 
-```bash
+# Create environment
 python -m venv venv
 
-#### 3. Activate Virtual Environment
+# Activate environment
+.\venv\Scripts\activate
+Note: You should see (venv) appear in your terminal prefix.
 
-```bash
-venv\Scripts\activate
+3. Troubleshooting Execution Policy
+If you encounter a "scripts disabled" error in PowerShell, run:
 
--> You should see (venv) in your terminal.
+PowerShell
 
-#### 4. Fix Execution Error (Windows only)
-
-```bash
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+Then repeat the activation step above.
 
--> Then reactivate by repeating step 3.
+4. Install & Run
+Bash
 
-#### 5. Install Dependencies
-
-```bash
+# Install dependencies
 pip install -r requirements.txt
 
--> This installs Django and all required packages.
-
-#### 6. Start Deployment Server
-
-```bash
+# Start the development server
 python manage.py runserver
+📈 Roadmap
+Phase 1: Core Backend (Current)
+RESTful API for Goals & Tasks
 
----
+User Authentication
 
-## 📈 Roadmap
+Base Planner logic
 
-#### Phase 1 — Core Backend (Current)
+Phase 2: Intelligence
+AI-driven task breakdown
 
-- Authentication
-- Goals API
-- Task management
-- Basic planner
+Context-aware smart rescheduling
 
-#### Phase 2 — Intelligence
+Personalized productivity profiling
 
-- AI task breakdown
-- Smart rescheduling
-- Productivity profiling
+Phase 3: Scale
+Team collaboration modules
 
-#### Phase 3 — Platform
+Accountability & notification systems
 
-- Team collaboration
-- Accountability features
-- Analytics dashboard
+Advanced Analytics dashboard
 
----
+🤝 Contribution
+This project is currently under active development. If you have feedback or find a bug, feel free to open an issue or reach out.
 
-## 🤝 Contribution
-
-This project is currently under active development. Feedback, issues, and suggestions are welcome.
-
----
-
-## 📄 License
-
+📄 License
 This project is private and proprietary. All rights reserved.
 
----
-
-## ✨ Author
-
-Built by Jesse Adesina as part of Zimna AI platform.
+✨ Author
+Developed by Jesse Adesina as part of the Zimna AI platform.
