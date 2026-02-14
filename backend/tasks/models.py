@@ -1,3 +1,29 @@
+import uuid
 from django.db import models
+from goals.models import Goal # link to Goal model
 
-# Create your models here.
+class Task(models.Model):
+    # UUID as primary key
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+
+    # link to a goal
+    goal = models.ForeignKey(
+        Goal,
+        on_delete=models.CASCADE,
+        related_name='tasks'
+    )
+
+    # required title
+    title = models.CharField(max_length=255)
+
+    # optional description
+    description = models.CharField(blank=True)
+
+    due_date = models.DateField(null=True, blank=True)
+    completion_status = models.BooleanField(default=False)
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.title
