@@ -1,7 +1,11 @@
+import uuid
 from django.db import models
 from django.conf import settings # to link to User model
 
 class Goals(models.Model):
+    # use UUID as primary key
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+
     # link each goal to a user
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
@@ -21,7 +25,7 @@ class Goals(models.Model):
 
     # completion status
     completion_status = models.BooleanField(default=False)
-    
+
     # timestamps
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.TimeField(auto_now=True)
