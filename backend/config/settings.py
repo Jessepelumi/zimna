@@ -37,8 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'goals',
+    'users', # Custom user management app, handles User model & authentication
+    'goals', # Goal management app, handles creation, tracking, & AI-powered breakdowns
+    'tasks', # Task management app, handles individual tasks & tracking
 ]
+
+# Use custom user model from users app
+AUTH_USER_MODEL = 'users.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
