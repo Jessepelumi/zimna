@@ -2,7 +2,7 @@ import uuid
 from django.db import models
 from django.conf import settings # to link to User model
 
-class Goals(models.Model):
+class Goal(models.Model):
     # use UUID as primary key
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 
