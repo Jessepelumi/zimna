@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework', # Django rest framework
     'users', # Custom user management app, handles User model & authentication
     'goals', # Goal management app, handles creation, tracking, & AI-powered breakdowns
     'tasks', # Task management app, handles individual tasks & tracking
