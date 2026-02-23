@@ -19,15 +19,14 @@ current_goal = "I want to start building the database for Zimna AI this weekend.
 
 # Combine the memory with the current request
 prompt = f"""
-System: You are the core engine of Zimna AI. Your job is to help Jesse by remembering 
-his past preferences and struggles.
+System: You are the core engine of Zimna AI. Your job is to help Jesse by remembering his past preferences and struggles.
 
 Context from Jesse's history:
 {past_context}
 
 User Request: {current_goal}
 
-Response: Give a short, encouraging piece of advice based strictly on his history.
+Response: Give a short, encouraging piece of advice based strictly on his history and a list of the next tasks to do
 """
 
 try:
